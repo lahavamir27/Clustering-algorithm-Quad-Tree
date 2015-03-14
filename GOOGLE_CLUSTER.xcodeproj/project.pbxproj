@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DCDA4751AB4B61800540436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4741AB4B61800540436 /* main.m */; };
+		4DCDA4781AB4B61800540436 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4771AB4B61800540436 /* AppDelegate.m */; };
+		4DCDA47B1AB4B61800540436 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA47A1AB4B61800540436 /* FirstViewController.m */; };
+		4DCDA47E1AB4B61800540436 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA47D1AB4B61800540436 /* SecondViewController.m */; };
+		4DCDA4811AB4B61800540436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCDA47F1AB4B61800540436 /* Main.storyboard */; };
+		4DCDA4831AB4B61800540436 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DCDA4821AB4B61800540436 /* Images.xcassets */; };
+		4DCDA4861AB4B61800540436 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DCDA4841AB4B61800540436 /* LaunchScreen.xib */; };
+		4DCDA4921AB4B61900540436 /* GOOGLE_CLUSTERTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4911AB4B61900540436 /* GOOGLE_CLUSTERTests.m */; };
+		4DCDA49E1AB4B66300540436 /* SphericalMercatorProjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA49D1AB4B66300540436 /* SphericalMercatorProjection.m */; };
+		4DCDA4A71AB4B68500540436 /* GQuadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4A21AB4B68500540436 /* GQuadItem.m */; };
+		4DCDA4A81AB4B68500540436 /* GStaticCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4A41AB4B68500540436 /* GStaticCluster.m */; };
+		4DCDA4A91AB4B68500540436 /* NonHierarchicalDistanceBasedAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4A61AB4B68500540436 /* NonHierarchicalDistanceBasedAlgorithm.m */; };
+		4DCDA4AF1AB4B69600540436 /* GClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4AE1AB4B69600540436 /* GClusterManager.m */; };
+		4DCDA4B41AB4B6AD00540436 /* GDefaultClusterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4B31AB4B6AD00540436 /* GDefaultClusterRenderer.m */; };
+		4DCDA4BD1AB4B6E700540436 /* GQTPointQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4B91AB4B6E700540436 /* GQTPointQuadTree.m */; };
+		4DCDA4BE1AB4B6E700540436 /* GQTPointQuadTreeChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4BB1AB4B6E700540436 /* GQTPointQuadTreeChild.m */; };
+		4DCDA4C41AB4B70700540436 /* ClusterMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4C11AB4B70700540436 /* ClusterMapViewController.m */; };
+		4DCDA4C51AB4B70700540436 /* Spot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDA4C31AB4B70700540436 /* Spot.m */; };
+		4DCDA4C91AB4B78200540436 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DCDA4C81AB4B78200540436 /* GoogleMaps.bundle */; };
+		4DCDA4CB1AB4B7B900540436 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4CA1AB4B7B900540436 /* GoogleMaps.framework */; };
+		4DCDA4CD1AB4B82300540436 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4CC1AB4B82300540436 /* AVFoundation.framework */; };
+		4DCDA4CF1AB4B82C00540436 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4CE1AB4B82C00540436 /* CoreData.framework */; };
+		4DCDA4D11AB4B83300540436 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4D01AB4B83300540436 /* CoreLocation.framework */; };
+		4DCDA4D31AB4B85100540436 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4D21AB4B85100540436 /* CoreText.framework */; };
+		4DCDA4D51AB4B85B00540436 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4D41AB4B85B00540436 /* GLKit.framework */; };
+		4DCDA4D71AB4B86100540436 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4D61AB4B86100540436 /* ImageIO.framework */; };
+		4DCDA4D91AB4B86C00540436 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4D81AB4B86C00540436 /* libc++.dylib */; };
+		4DCDA4DB1AB4B87E00540436 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4DA1AB4B87E00540436 /* libicucore.dylib */; };
+		4DCDA4DD1AB4B88600540436 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4DC1AB4B88600540436 /* libz.dylib */; };
+		4DCDA4DF1AB4B88E00540436 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4DE1AB4B88E00540436 /* OpenGLES.framework */; };
+		4DCDA4E11AB4B89500540436 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4E01AB4B89500540436 /* QuartzCore.framework */; };
+		4DCDA4E31AB4B8A000540436 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCDA4E21AB4B8A000540436 /* SystemConfiguration.framework */; };
+		4DCDA4E51AB4BF0700540436 /* worker.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DCDA4E41AB4BF0700540436 /* worker.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DCDA48C1AB4B61900540436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DCDA4671AB4B61800540436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DCDA46E1AB4B61800540436;
+			remoteInfo = GOOGLE_CLUSTER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DCDA46F1AB4B61800540436 /* GOOGLE_CLUSTER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOOGLE_CLUSTER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DCDA4731AB4B61800540436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DCDA4741AB4B61800540436 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DCDA4761AB4B61800540436 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4DCDA4771AB4B61800540436 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4DCDA4791AB4B61800540436 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		4DCDA47A1AB4B61800540436 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		4DCDA47C1AB4B61800540436 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		4DCDA47D1AB4B61800540436 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4DCDA4801AB4B61800540436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DCDA4821AB4B61800540436 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4DCDA4851AB4B61800540436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4DCDA48B1AB4B61900540436 /* GOOGLE_CLUSTERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GOOGLE_CLUSTERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DCDA4901AB4B61900540436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DCDA4911AB4B61900540436 /* GOOGLE_CLUSTERTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOOGLE_CLUSTERTests.m; sourceTree = "<group>"; };
+		4DCDA49C1AB4B66300540436 /* SphericalMercatorProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SphericalMercatorProjection.h; sourceTree = "<group>"; };
+		4DCDA49D1AB4B66300540436 /* SphericalMercatorProjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SphericalMercatorProjection.m; sourceTree = "<group>"; };
+		4DCDA4A01AB4B68500540436 /* GClusterAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GClusterAlgorithm.h; sourceTree = "<group>"; };
+		4DCDA4A11AB4B68500540436 /* GQuadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQuadItem.h; sourceTree = "<group>"; };
+		4DCDA4A21AB4B68500540436 /* GQuadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQuadItem.m; sourceTree = "<group>"; };
+		4DCDA4A31AB4B68500540436 /* GStaticCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GStaticCluster.h; sourceTree = "<group>"; };
+		4DCDA4A41AB4B68500540436 /* GStaticCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GStaticCluster.m; sourceTree = "<group>"; };
+		4DCDA4A51AB4B68500540436 /* NonHierarchicalDistanceBasedAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonHierarchicalDistanceBasedAlgorithm.h; sourceTree = "<group>"; };
+		4DCDA4A61AB4B68500540436 /* NonHierarchicalDistanceBasedAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonHierarchicalDistanceBasedAlgorithm.m; sourceTree = "<group>"; };
+		4DCDA4AB1AB4B69600540436 /* GCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCluster.h; sourceTree = "<group>"; };
+		4DCDA4AC1AB4B69600540436 /* GClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GClusterItem.h; sourceTree = "<group>"; };
+		4DCDA4AD1AB4B69600540436 /* GClusterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GClusterManager.h; sourceTree = "<group>"; };
+		4DCDA4AE1AB4B69600540436 /* GClusterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GClusterManager.m; sourceTree = "<group>"; };
+		4DCDA4B11AB4B6AD00540436 /* GClusterRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GClusterRenderer.h; sourceTree = "<group>"; };
+		4DCDA4B21AB4B6AD00540436 /* GDefaultClusterRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDefaultClusterRenderer.h; sourceTree = "<group>"; };
+		4DCDA4B31AB4B6AD00540436 /* GDefaultClusterRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDefaultClusterRenderer.m; sourceTree = "<group>"; };
+		4DCDA4B61AB4B6E700540436 /* GQTBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTBounds.h; sourceTree = "<group>"; };
+		4DCDA4B71AB4B6E700540436 /* GQTPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPoint.h; sourceTree = "<group>"; };
+		4DCDA4B81AB4B6E700540436 /* GQTPointQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPointQuadTree.h; sourceTree = "<group>"; };
+		4DCDA4B91AB4B6E700540436 /* GQTPointQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQTPointQuadTree.m; sourceTree = "<group>"; };
+		4DCDA4BA1AB4B6E700540436 /* GQTPointQuadTreeChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPointQuadTreeChild.h; sourceTree = "<group>"; };
+		4DCDA4BB1AB4B6E700540436 /* GQTPointQuadTreeChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQTPointQuadTreeChild.m; sourceTree = "<group>"; };
+		4DCDA4BC1AB4B6E700540436 /* GQTPointQuadTreeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPointQuadTreeItem.h; sourceTree = "<group>"; };
+		4DCDA4C01AB4B70700540436 /* ClusterMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClusterMapViewController.h; path = ../ClusterMapViewController.h; sourceTree = "<group>"; };
+		4DCDA4C11AB4B70700540436 /* ClusterMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClusterMapViewController.m; path = ../ClusterMapViewController.m; sourceTree = "<group>"; };
+		4DCDA4C21AB4B70700540436 /* Spot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spot.h; sourceTree = "<group>"; };
+		4DCDA4C31AB4B70700540436 /* Spot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spot.m; sourceTree = "<group>"; };
+		4DCDA4C81AB4B78200540436 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		4DCDA4CA1AB4B7B900540436 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		4DCDA4CC1AB4B82300540436 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4DCDA4CE1AB4B82C00540436 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4DCDA4D01AB4B83300540436 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4DCDA4D21AB4B85100540436 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4DCDA4D41AB4B85B00540436 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		4DCDA4D61AB4B86100540436 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		4DCDA4D81AB4B86C00540436 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		4DCDA4DA1AB4B87E00540436 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		4DCDA4DC1AB4B88600540436 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4DCDA4DE1AB4B88E00540436 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4DCDA4E01AB4B89500540436 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4DCDA4E21AB4B8A000540436 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4DCDA4E41AB4BF0700540436 /* worker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = worker.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DCDA46C1AB4B61800540436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCDA4E31AB4B8A000540436 /* SystemConfiguration.framework in Frameworks */,
+				4DCDA4E11AB4B89500540436 /* QuartzCore.framework in Frameworks */,
+				4DCDA4DF1AB4B88E00540436 /* OpenGLES.framework in Frameworks */,
+				4DCDA4DD1AB4B88600540436 /* libz.dylib in Frameworks */,
+				4DCDA4DB1AB4B87E00540436 /* libicucore.dylib in Frameworks */,
+				4DCDA4D91AB4B86C00540436 /* libc++.dylib in Frameworks */,
+				4DCDA4D71AB4B86100540436 /* ImageIO.framework in Frameworks */,
+				4DCDA4D51AB4B85B00540436 /* GLKit.framework in Frameworks */,
+				4DCDA4D31AB4B85100540436 /* CoreText.framework in Frameworks */,
+				4DCDA4D11AB4B83300540436 /* CoreLocation.framework in Frameworks */,
+				4DCDA4CF1AB4B82C00540436 /* CoreData.framework in Frameworks */,
+				4DCDA4CD1AB4B82300540436 /* AVFoundation.framework in Frameworks */,
+				4DCDA4CB1AB4B7B900540436 /* GoogleMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCDA4881AB4B61900540436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DCDA4661AB4B61800540436 = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4E21AB4B8A000540436 /* SystemConfiguration.framework */,
+				4DCDA4E01AB4B89500540436 /* QuartzCore.framework */,
+				4DCDA4DE1AB4B88E00540436 /* OpenGLES.framework */,
+				4DCDA4DC1AB4B88600540436 /* libz.dylib */,
+				4DCDA4DA1AB4B87E00540436 /* libicucore.dylib */,
+				4DCDA4D81AB4B86C00540436 /* libc++.dylib */,
+				4DCDA4D61AB4B86100540436 /* ImageIO.framework */,
+				4DCDA4D41AB4B85B00540436 /* GLKit.framework */,
+				4DCDA4D21AB4B85100540436 /* CoreText.framework */,
+				4DCDA4D01AB4B83300540436 /* CoreLocation.framework */,
+				4DCDA4CE1AB4B82C00540436 /* CoreData.framework */,
+				4DCDA4CC1AB4B82300540436 /* AVFoundation.framework */,
+				4DCDA4CA1AB4B7B900540436 /* GoogleMaps.framework */,
+				4DCDA4C81AB4B78200540436 /* GoogleMaps.bundle */,
+				4DCDA49B1AB4B64E00540436 /* New Group */,
+				4DCDA4711AB4B61800540436 /* GOOGLE_CLUSTER */,
+				4DCDA48E1AB4B61900540436 /* GOOGLE_CLUSTERTests */,
+				4DCDA4701AB4B61800540436 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DCDA4701AB4B61800540436 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA46F1AB4B61800540436 /* GOOGLE_CLUSTER.app */,
+				4DCDA48B1AB4B61900540436 /* GOOGLE_CLUSTERTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DCDA4711AB4B61800540436 /* GOOGLE_CLUSTER */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4C01AB4B70700540436 /* ClusterMapViewController.h */,
+				4DCDA4C11AB4B70700540436 /* ClusterMapViewController.m */,
+				4DCDA4761AB4B61800540436 /* AppDelegate.h */,
+				4DCDA4771AB4B61800540436 /* AppDelegate.m */,
+				4DCDA4791AB4B61800540436 /* FirstViewController.h */,
+				4DCDA47A1AB4B61800540436 /* FirstViewController.m */,
+				4DCDA47C1AB4B61800540436 /* SecondViewController.h */,
+				4DCDA47D1AB4B61800540436 /* SecondViewController.m */,
+				4DCDA47F1AB4B61800540436 /* Main.storyboard */,
+				4DCDA4821AB4B61800540436 /* Images.xcassets */,
+				4DCDA4841AB4B61800540436 /* LaunchScreen.xib */,
+				4DCDA4721AB4B61800540436 /* Supporting Files */,
+			);
+			path = GOOGLE_CLUSTER;
+			sourceTree = "<group>";
+		};
+		4DCDA4721AB4B61800540436 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4E41AB4BF0700540436 /* worker.json */,
+				4DCDA4731AB4B61800540436 /* Info.plist */,
+				4DCDA4741AB4B61800540436 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DCDA48E1AB4B61900540436 /* GOOGLE_CLUSTERTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4911AB4B61900540436 /* GOOGLE_CLUSTERTests.m */,
+				4DCDA48F1AB4B61900540436 /* Supporting Files */,
+			);
+			path = GOOGLE_CLUSTERTests;
+			sourceTree = "<group>";
+		};
+		4DCDA48F1AB4B61900540436 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4901AB4B61900540436 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DCDA49B1AB4B64E00540436 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4BF1AB4B6F400540436 /* controller */,
+				4DCDA4B51AB4B6DD00540436 /* quadtree */,
+				4DCDA4B01AB4B6A000540436 /* view */,
+				4DCDA4AA1AB4B68C00540436 /* cluster */,
+				4DCDA49C1AB4B66300540436 /* SphericalMercatorProjection.h */,
+				4DCDA49D1AB4B66300540436 /* SphericalMercatorProjection.m */,
+				4DCDA49F1AB4B67500540436 /* algo */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		4DCDA49F1AB4B67500540436 /* algo */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4A01AB4B68500540436 /* GClusterAlgorithm.h */,
+				4DCDA4A11AB4B68500540436 /* GQuadItem.h */,
+				4DCDA4A21AB4B68500540436 /* GQuadItem.m */,
+				4DCDA4A31AB4B68500540436 /* GStaticCluster.h */,
+				4DCDA4A41AB4B68500540436 /* GStaticCluster.m */,
+				4DCDA4A51AB4B68500540436 /* NonHierarchicalDistanceBasedAlgorithm.h */,
+				4DCDA4A61AB4B68500540436 /* NonHierarchicalDistanceBasedAlgorithm.m */,
+			);
+			name = algo;
+			sourceTree = "<group>";
+		};
+		4DCDA4AA1AB4B68C00540436 /* cluster */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4AB1AB4B69600540436 /* GCluster.h */,
+				4DCDA4AC1AB4B69600540436 /* GClusterItem.h */,
+				4DCDA4AD1AB4B69600540436 /* GClusterManager.h */,
+				4DCDA4AE1AB4B69600540436 /* GClusterManager.m */,
+			);
+			name = cluster;
+			sourceTree = "<group>";
+		};
+		4DCDA4B01AB4B6A000540436 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4B11AB4B6AD00540436 /* GClusterRenderer.h */,
+				4DCDA4B21AB4B6AD00540436 /* GDefaultClusterRenderer.h */,
+				4DCDA4B31AB4B6AD00540436 /* GDefaultClusterRenderer.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		4DCDA4B51AB4B6DD00540436 /* quadtree */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4B61AB4B6E700540436 /* GQTBounds.h */,
+				4DCDA4B71AB4B6E700540436 /* GQTPoint.h */,
+				4DCDA4B81AB4B6E700540436 /* GQTPointQuadTree.h */,
+				4DCDA4B91AB4B6E700540436 /* GQTPointQuadTree.m */,
+				4DCDA4BA1AB4B6E700540436 /* GQTPointQuadTreeChild.h */,
+				4DCDA4BB1AB4B6E700540436 /* GQTPointQuadTreeChild.m */,
+				4DCDA4BC1AB4B6E700540436 /* GQTPointQuadTreeItem.h */,
+			);
+			name = quadtree;
+			sourceTree = "<group>";
+		};
+		4DCDA4BF1AB4B6F400540436 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DCDA4C21AB4B70700540436 /* Spot.h */,
+				4DCDA4C31AB4B70700540436 /* Spot.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DCDA46E1AB4B61800540436 /* GOOGLE_CLUSTER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DCDA4951AB4B61900540436 /* Build configuration list for PBXNativeTarget "GOOGLE_CLUSTER" */;
+			buildPhases = (
+				4DCDA46B1AB4B61800540436 /* Sources */,
+				4DCDA46C1AB4B61800540436 /* Frameworks */,
+				4DCDA46D1AB4B61800540436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GOOGLE_CLUSTER;
+			productName = GOOGLE_CLUSTER;
+			productReference = 4DCDA46F1AB4B61800540436 /* GOOGLE_CLUSTER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DCDA48A1AB4B61900540436 /* GOOGLE_CLUSTERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DCDA4981AB4B61900540436 /* Build configuration list for PBXNativeTarget "GOOGLE_CLUSTERTests" */;
+			buildPhases = (
+				4DCDA4871AB4B61900540436 /* Sources */,
+				4DCDA4881AB4B61900540436 /* Frameworks */,
+				4DCDA4891AB4B61900540436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DCDA48D1AB4B61900540436 /* PBXTargetDependency */,
+			);
+			name = GOOGLE_CLUSTERTests;
+			productName = GOOGLE_CLUSTERTests;
+			productReference = 4DCDA48B1AB4B61900540436 /* GOOGLE_CLUSTERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DCDA4671AB4B61800540436 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "amir lahav";
+				TargetAttributes = {
+					4DCDA46E1AB4B61800540436 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					4DCDA48A1AB4B61900540436 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 4DCDA46E1AB4B61800540436;
+					};
+				};
+			};
+			buildConfigurationList = 4DCDA46A1AB4B61800540436 /* Build configuration list for PBXProject "GOOGLE_CLUSTER" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DCDA4661AB4B61800540436;
+			productRefGroup = 4DCDA4701AB4B61800540436 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DCDA46E1AB4B61800540436 /* GOOGLE_CLUSTER */,
+				4DCDA48A1AB4B61900540436 /* GOOGLE_CLUSTERTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DCDA46D1AB4B61800540436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCDA4811AB4B61800540436 /* Main.storyboard in Resources */,
+				4DCDA4861AB4B61800540436 /* LaunchScreen.xib in Resources */,
+				4DCDA4831AB4B61800540436 /* Images.xcassets in Resources */,
+				4DCDA4C91AB4B78200540436 /* GoogleMaps.bundle in Resources */,
+				4DCDA4E51AB4BF0700540436 /* worker.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCDA4891AB4B61900540436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DCDA46B1AB4B61800540436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCDA49E1AB4B66300540436 /* SphericalMercatorProjection.m in Sources */,
+				4DCDA4C51AB4B70700540436 /* Spot.m in Sources */,
+				4DCDA4AF1AB4B69600540436 /* GClusterManager.m in Sources */,
+				4DCDA4BD1AB4B6E700540436 /* GQTPointQuadTree.m in Sources */,
+				4DCDA4A71AB4B68500540436 /* GQuadItem.m in Sources */,
+				4DCDA4A81AB4B68500540436 /* GStaticCluster.m in Sources */,
+				4DCDA47E1AB4B61800540436 /* SecondViewController.m in Sources */,
+				4DCDA4781AB4B61800540436 /* AppDelegate.m in Sources */,
+				4DCDA4A91AB4B68500540436 /* NonHierarchicalDistanceBasedAlgorithm.m in Sources */,
+				4DCDA47B1AB4B61800540436 /* FirstViewController.m in Sources */,
+				4DCDA4751AB4B61800540436 /* main.m in Sources */,
+				4DCDA4C41AB4B70700540436 /* ClusterMapViewController.m in Sources */,
+				4DCDA4B41AB4B6AD00540436 /* GDefaultClusterRenderer.m in Sources */,
+				4DCDA4BE1AB4B6E700540436 /* GQTPointQuadTreeChild.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCDA4871AB4B61900540436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCDA4921AB4B61900540436 /* GOOGLE_CLUSTERTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DCDA48D1AB4B61900540436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DCDA46E1AB4B61800540436 /* GOOGLE_CLUSTER */;
+			targetProxy = 4DCDA48C1AB4B61900540436 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DCDA47F1AB4B61800540436 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DCDA4801AB4B61800540436 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DCDA4841AB4B61800540436 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DCDA4851AB4B61800540436 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DCDA4931AB4B61900540436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4DCDA4941AB4B61900540436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DCDA4961AB4B61900540436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GOOGLE_CLUSTER/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4DCDA4971AB4B61900540436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GOOGLE_CLUSTER/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		4DCDA4991AB4B61900540436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GOOGLE_CLUSTERTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOOGLE_CLUSTER.app/GOOGLE_CLUSTER";
+			};
+			name = Debug;
+		};
+		4DCDA49A1AB4B61900540436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GOOGLE_CLUSTERTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GOOGLE_CLUSTER.app/GOOGLE_CLUSTER";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DCDA46A1AB4B61800540436 /* Build configuration list for PBXProject "GOOGLE_CLUSTER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DCDA4931AB4B61900540436 /* Debug */,
+				4DCDA4941AB4B61900540436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DCDA4951AB4B61900540436 /* Build configuration list for PBXNativeTarget "GOOGLE_CLUSTER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DCDA4961AB4B61900540436 /* Debug */,
+				4DCDA4971AB4B61900540436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4DCDA4981AB4B61900540436 /* Build configuration list for PBXNativeTarget "GOOGLE_CLUSTERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DCDA4991AB4B61900540436 /* Debug */,
+				4DCDA49A1AB4B61900540436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DCDA4671AB4B61800540436 /* Project object */;
+}
