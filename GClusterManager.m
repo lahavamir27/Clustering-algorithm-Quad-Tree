@@ -48,39 +48,26 @@
     GMSVisibleRegion vis = [proj visibleRegion];
 
     CLLocationCoordinate2D farLeft = vis.farLeft;
+    CLLocationCoordinate2D farRight = vis.farRight;
+    
     CLLocationCoordinate2D nearRight =vis.nearRight;
-    NSLog(@"far left %f",farLeft.latitude);
-    
-    
-    _mapWidthSize = [NSNumber numberWithDouble: floor((vis.farLeft.longitude - vis.farRight.longitude)*-1*pow(10, 5))] ;
-    _mapHeightSize = [NSNumber numberWithDouble: floor((vis.nearRight.latitude - vis.farLeft.latitude)*-1*pow(10, 5))] ;
+    CLLocationCoordinate2D nearLeft =vis.nearLeft;
 
-    NSLog(@"  map size in meter = %f  ",[_mapWidthSize doubleValue]);
-    
-    if (!_clusterLbl) {
-        _clusterLbl =[[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    NSLog(@"far left %f,%f",farLeft.latitude,farLeft.longitude);
+    NSLog(@"far right %f,%f",farRight.latitude,farRight.longitude);
+
+    double widthMap =pow(pow(farRight.latitude-nearRight.latitude, 2)+pow(farRight.longitude-nearRight.longitude, 2), 0.5);
+    double heightMap =pow(pow(farRight.latitude-farLeft.latitude, 2)+pow(farRight.longitude-farLeft.longitude, 2), 0.5);
+
+   
+    if (!_clusterLbl)
+    {
+        _clusterLbl =[[UILabel alloc]initWithFrame:CGRectMake(0, 20, 100, 100)];
         [mapView addSubview:_clusterLbl];
         _clusterLbl.backgroundColor = [UIColor whiteColor];
         
     }
     
-    if (!_mapWidthLbl) {
-        _mapWidthLbl =[[UILabel alloc]initWithFrame:CGRectMake(100, 130, 100, 100)];
-        [mapView addSubview:_mapWidthLbl];
-        _mapWidthLbl.backgroundColor = [UIColor whiteColor];
-        
-    }
-    _mapWidthLbl.text = [NSString stringWithFormat:@"view width in meter: %d",[_mapWidthSize integerValue]];
-    [_mapWidthLbl sizeToFit];
-    
-    if (!_mapHeightLbl) {
-        _mapHeightLbl =[[UILabel alloc]initWithFrame:CGRectMake(100, 160, 100, 100)];
-        [mapView addSubview:_mapHeightLbl];
-        _mapHeightLbl.backgroundColor = [UIColor whiteColor];
-        
-    }
-    _mapHeightLbl.text = [NSString stringWithFormat:@"view height in meter: %d",[_mapHeightSize integerValue]];
-    [_mapHeightLbl sizeToFit];
     
     // Don't re-compute clusters if the map has just been panned/tilted/rotated.
     GMSCameraPosition *position = [mapView camera];

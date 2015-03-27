@@ -612,6 +612,7 @@
 				4DCDA4971AB4B61900540436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DCDA4981AB4B61900540436 /* Build configuration list for PBXNativeTarget "GOOGLE_CLUSTERTests" */ = {
 			isa = XCConfigurationList;
@@ -620,6 +621,7 @@
 				4DCDA49A1AB4B61900540436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

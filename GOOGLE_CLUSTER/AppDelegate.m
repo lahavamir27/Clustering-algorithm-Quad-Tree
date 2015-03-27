@@ -19,11 +19,24 @@
     // Override point for customization after application launch.
     
     [GMSServices provideAPIKey:@"AIzaSyDcKoyfp3cNf78A4NQfOM1n2rMRYLmr61A"];
-    
+  /*
     ClusterMapViewController* controller = [[ClusterMapViewController alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window setRootViewController:controller];
+    */
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
+    
+    
+    UIImage *selectedImage = [UIImage imageNamed:@"ic_map_black_48dp"];
+    [tabBarItem1 setSelectedImage: selectedImage];
+
+    
+    tabBarItem1.title =@"map";
     
     return YES;
 }

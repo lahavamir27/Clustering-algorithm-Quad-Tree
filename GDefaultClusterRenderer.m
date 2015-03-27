@@ -45,7 +45,10 @@
         marker.position = cluster.position;
         marker.map = _map;
         marker.title = [NSString stringWithFormat:@"%f, %f",cluster.position.latitude,cluster.position.longitude];
+       // NSLog(@"%f, %f, %d",cluster.position.latitude,cluster.position.longitude,count);
+
     }
+    
 
 
     
@@ -83,7 +86,7 @@
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
 
     CGContextRef ctx = UIGraphicsGetCurrentContext();
-    UIColor *color = [UIColor colorWithRed:212/255.0 green:83/255.0 blue:78/255.0 alpha:1];
+    UIColor *color = [UIColor colorWithRed:212/255.0 green:83/255.0 blue:78/255.0 alpha:.9];
     // set stroking color and draw circle
     [[UIColor colorWithRed:1 green:1 blue:1 alpha:1] setStroke];
     [color setFill];

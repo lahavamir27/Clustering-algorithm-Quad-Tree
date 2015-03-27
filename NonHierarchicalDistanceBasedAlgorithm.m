@@ -53,12 +53,12 @@
 - (NSSet*)getClusters:(float)zoom {
     int counter = 0;
     int discreteZoom = (int) zoom;
-    double zoomSpecificSpan = _maxDistanceAtZoom / pow(2, discreteZoom) /60;
-   
-    if (zoomSpecificSpan>0.000010) {
+    double zoomSpecificSpan = _maxDistanceAtZoom / pow(2, discreteZoom) /200;
+/*
+ if (zoomSpecificSpan>0.000010) {
         zoomSpecificSpan = 0.000075;
     }
-
+*/
     
     NSLog(@"%f zoom",zoomSpecificSpan);
     kDidtance = zoomSpecificSpan*pow(10, 7)*2;
@@ -115,7 +115,8 @@
 }
 
 - (double)distanceSquared:(GQTPoint) a :(GQTPoint) b {
-    return (a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y);
+    
+    return pow(pow((a.x - b.x) , 2) + pow( (a.y - b.y), 2), 0.5) ;
 }
 
 - (GQTBounds) createBoundsFromSpan:(GQTPoint) point span:(double) span {

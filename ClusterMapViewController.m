@@ -13,8 +13,8 @@
 #import "GDefaultClusterRenderer.h"
 
 @implementation ClusterMapViewController {
-    GMSMapView *mapView_;
-    GClusterManager *clusterManager_;
+    GMSMapView *mapView;
+    GClusterManager *clusterManager;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -34,21 +34,21 @@
                                                             longitude:35.293715
                                                                  zoom:9.5];
 	
-    mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    mapView_.myLocationEnabled = NO;
-    mapView_.settings.myLocationButton = NO;
-    mapView_.settings.compassButton = NO;
-    self.view = mapView_;
+    mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    mapView.myLocationEnabled = NO;
+    mapView.settings.myLocationButton = NO;
+    mapView.settings.compassButton = NO;
+    self.view = mapView;
     
-    clusterManager_ = [GClusterManager managerWithMapView:mapView_
+    clusterManager = [GClusterManager managerWithMapView:mapView
                                                algorithm:[[NonHierarchicalDistanceBasedAlgorithm alloc] init]
-                                                renderer:[[GDefaultClusterRenderer alloc] initWithMapView:mapView_]];
+                                                renderer:[[GDefaultClusterRenderer alloc] initWithMapView:mapView]];
 
-    [mapView_ setDelegate:clusterManager_];
+    [mapView setDelegate:clusterManager];
 
     [self setDatabse];
     
-    [clusterManager_ cluster];
+    [clusterManager cluster];
 }
 
 -(void)setDatabse
@@ -73,7 +73,7 @@
         
         Spot* spot = [[Spot alloc] init];
         spot.location = CLLocationCoordinate2DMake( [[arrayResult objectForKey:@"latitude"] doubleValue],[[arrayResult objectForKey:@"longitude"]  doubleValue]);
-        [clusterManager_ addItem:spot];
+        [clusterManager addItem:spot];
         
     }
 }
